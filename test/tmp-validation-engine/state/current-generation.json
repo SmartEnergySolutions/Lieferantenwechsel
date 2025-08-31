@@ -1,0 +1,17 @@
+{
+  "generationId": "gen_1756674739179",
+  "status": "INITIALIZED",
+  "currentPhase": {
+    "phase": "VALIDATION",
+    "interruptible": true
+  },
+  "lastValidation": {
+    "at": "2025-08-31T21:12:19.177Z",
+    "valid": false,
+    "problems": [
+      "consistency",
+      "coverage"
+    ]
+  },
+  "lastUpdate": "2025-08-31T21:12:19.179Z"
+}

@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "at": "2025-08-31T21:12:19.177Z",
+    "valid": false,
+    "problems": [
+      "consistency",
+      "coverage"
+    ]
+  },
+  "consistency": {
+    "valid": false,
+    "problems": [
+      "missing state file: /home/thorsten/Development/Lieferantenwechsel/test/tmp-validation-engine/state/current-generation.json"
+    ],
+    "details": {
+      "missingChapterStates": [],
+      "completedMismatch": [],
+      "completedWithPendingDecisions": [],
+      "duplicateDecisionIds": [],
+      "invalidCurrentPhaseChapter": null,
+      "orphanCompletedChapters": [],
+      "filenameIdMismatch": [],
+      "fixed": {
+        "removedFromCompleted": [],
+        "clearedPendingOnCompleted": [],
+        "removedInvalidCurrentPhaseChapter": false,
+        "addedToCompleted": [],
+        "filesWritten": []
+      }
+    }
+  },
+  "outputs": {
+    "valid": true,
+    "problems": [],
+    "details": {
+      "staleRefs": [],
+      "orphanFiles": [],
+      "filesAddedToState": [],
+      "refsRemoved": [],
+      "filesWritten": []
+    }
+  },
+  "coverage": {
+    "valid": false,
+    "chapters": [
+      {
+        "chapterId": "01-overview",
+        "required": 2,
+        "have": 1,
+        "ok": false
+      },
+      {
+        "chapterId": "02-contract",
+        "required": 0,
+        "have": 0,
+        "ok": true
+      }
+    ]
+  },
+  "crossrefs": {
+    "valid": true,
+    "unresolved": [],
+    "totalRefs": 0
+  }
+}

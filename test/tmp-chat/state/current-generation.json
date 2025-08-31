@@ -1,0 +1,52 @@
+{
+  "generationId": "gen_1756674737778",
+  "startTime": "2025-08-31T21:12:17.778Z",
+  "lastUpdate": "2025-08-31T21:12:17.952Z",
+  "version": "1.0.0",
+  "status": "INITIALIZED",
+  "currentPhase": {
+    "phase": "INITIALIZATION",
+    "interruptible": true,
+    "lastCheckpoint": null
+  },
+  "completedChapters": [],
+  "globalSettings": {
+    "interactiveMode": true,
+    "detailLevel": "standard",
+    "maxIterationsPerSection": 4,
+    "autoSaveInterval": 30000
+  },
+  "userPreferences": {
+    "searchStrategy": {
+      "alpha": 0.7,
+      "priorityChunkTypes": [
+        "pseudocode_flow",
+        "pseudocode_validations_rules"
+      ],
+      "adaptiveKeywords": []
+    },
+    "contentPreferences": {
+      "exampleDensity": "medium",
+      "technicalDetail": "medium",
+      "crossReferenceStyle": "inline"
+    }
+  },
+  "statistics": {
+    "totalSearchQueries": 0,
+    "totalUserInteractions": 1,
+    "averageSectionTime": 0,
+    "cacheHitRatio": 0
+  },
+  "metadata": {
+    "interactions": [
+      {
+        "context": {
+          "chapterId": "01-overview",
+          "term": "Test"
+        },
+        "items": 2,
+        "savedAt": "2025-08-31T21:12:17.935Z"
+      }
+    ]
+  }
+}

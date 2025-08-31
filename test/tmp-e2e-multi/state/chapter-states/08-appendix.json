@@ -1,0 +1,26 @@
+{
+  "chapterId": "08-appendix",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [],
+  "completedSections": [
+    {
+      "sectionName": "Glossar",
+      "completedAt": "2025-08-31T21:12:19.387Z",
+      "generatedContent": {
+        "contentFile": "08-appendix__glossar.md",
+        "wordCount": 29,
+        "qualityScore": 0,
+        "qualityChecks": {
+          "lengthOk": false,
+          "hasSources": false
+        },
+        "userFeedback": null
+      },
+      "searchResults": {
+        "totalResults": 0,
+        "selectedResultIds": []
+      }
+    }
+  ],
+  "searchHistory": []
+}

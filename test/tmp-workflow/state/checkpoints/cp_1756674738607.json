@@ -1,0 +1,59 @@
+{
+  "checkpointId": "cp_1756674738607",
+  "createdAt": "2025-08-31T21:12:18.607Z",
+  "type": "PHASE_TRANSITION",
+  "description": "PRE_STRUCTURE_REVIEW",
+  "stateSnapshot": {
+    "currentGeneration": {
+      "generationId": "gen_1756674738584",
+      "startTime": "2025-08-31T21:12:18.584Z",
+      "lastUpdate": "2025-08-31T21:12:18.601Z",
+      "version": "1.0.0",
+      "status": "IN_PROGRESS",
+      "currentPhase": {
+        "phase": "STRUCTURE_REVIEW",
+        "interruptible": true,
+        "meta": {},
+        "lastCheckpoint": null
+      },
+      "completedChapters": [],
+      "globalSettings": {
+        "interactiveMode": false,
+        "detailLevel": "standard",
+        "maxIterationsPerSection": 4,
+        "autoSaveInterval": 30000
+      },
+      "userPreferences": {
+        "searchStrategy": {
+          "alpha": 0.7,
+          "priorityChunkTypes": [
+            "pseudocode_flow",
+            "pseudocode_validations_rules"
+          ],
+          "adaptiveKeywords": []
+        },
+        "contentPreferences": {
+          "exampleDensity": "medium",
+          "technicalDetail": "medium",
+          "crossReferenceStyle": "inline"
+        }
+      },
+      "statistics": {
+        "totalSearchQueries": 0,
+        "totalUserInteractions": 0,
+        "averageSectionTime": 0,
+        "cacheHitRatio": 0
+      }
+    },
+    "chapterStates": {},
+    "searchCache": {}
+  },
+  "resumeInstructions": {
+    "nextPhase": "STRUCTURE_REVIEW"
+  },
+  "metadata": {
+    "generatedContent": {
+      "completedChapters": 0
+    }
+  }
+}

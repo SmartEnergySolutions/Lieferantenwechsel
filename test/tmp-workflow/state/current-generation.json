@@ -1,0 +1,59 @@
+{
+  "generationId": "gen_1756674738584",
+  "startTime": "2025-08-31T21:12:18.584Z",
+  "lastUpdate": "2025-08-31T21:12:18.672Z",
+  "version": "1.0.0",
+  "status": "IN_PROGRESS",
+  "currentPhase": {
+    "phase": "IDLE",
+    "interruptible": true,
+    "meta": {
+      "chapterId": "01-overview"
+    }
+  },
+  "completedChapters": [],
+  "globalSettings": {
+    "interactiveMode": false,
+    "detailLevel": "standard",
+    "maxIterationsPerSection": 4,
+    "autoSaveInterval": 30000
+  },
+  "userPreferences": {
+    "searchStrategy": {
+      "alpha": 0.7,
+      "priorityChunkTypes": [
+        "pseudocode_flow",
+        "pseudocode_validations_rules"
+      ],
+      "adaptiveKeywords": []
+    },
+    "contentPreferences": {
+      "exampleDensity": "medium",
+      "technicalDetail": "medium",
+      "crossReferenceStyle": "inline"
+    }
+  },
+  "statistics": {
+    "totalSearchQueries": 0,
+    "totalUserInteractions": 0,
+    "averageSectionTime": 0,
+    "cacheHitRatio": 0
+  },
+  "metadata": {
+    "structureReview": {
+      "startedAt": "2025-08-31T21:12:18.614Z",
+      "notes": []
+    },
+    "contentSuggestions": {
+      "01-overview": {
+        "reviewedAt": "2025-08-31T21:12:18.644Z"
+      }
+    },
+    "qualityFeedback": {
+      "01-overview": {
+        "startedAt": "2025-08-31T21:12:18.657Z",
+        "iterations": 0
+      }
+    }
+  }
+}

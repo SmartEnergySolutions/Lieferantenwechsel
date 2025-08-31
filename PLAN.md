@@ -1,19 +1,9 @@
 ### Funktionale Anforderungen
-- [x] Vollautomatische Generierung aller 8 Kapitel (Batch-Modus)
-- [x] Interaktive Generierung mit User-Feedback Integration
-- [x] Level-angepasste Content-Komplexität
-- [x] Konsistente Querverweise zwischen Kapiteln
-- [x] Strukturierte Validierung und Qualitätsprüfung
-- [x] Session-Persistierung und Recovery-Mechanismen
-- [x] **Granulare State-Persistierung** - Unterbrechung zu jedem Zeitpunkt möglich
-- [x] **Checkpoint-basierte Recovery** - Rollback zu stabilen Zwischenzuständen
-- [x] **Atomic State Operations** - Konsistente State-Transitionen ohne Korruption
 
 ### Qualitätsanforderungen
 
 ## Detaillierte State-Management Implementierung
 ### 6.2 Qualitätsmetriken
-- [x] **Content Quality Analyzer**
 ### State-Structure Definition
 ```javascript
 // ./state/current-generation.json Structure
@@ -1122,7 +1112,7 @@ npm install --save-dev jest nodemon eslint prettier
 ## Phase 5: Kern-Engine mit Interaktivität (Woche 3-4)
 
 ### 5.1 Stateful Interaktiver Hauptgenerator
-- [ ] **Stateful Interactive E-Book Generator** (`src/core/ebook-generator.js`)
+- [x] **Stateful Interactive E-Book Generator** (`src/core/ebook-generator.js`)
   ```javascript
   export class StatefulEBookGenerator {
     constructor() {
@@ -1161,23 +1151,24 @@ npm install --save-dev jest nodemon eslint prettier
   ```
 
 ### 5.2 Stateful Interaktiver Kapitel-Prozessor
-- [ ] **Stateful Interactive Chapter Processor** (`src/core/chapter-processor.js`)
+- [x] **Stateful Interactive Chapter Processor** (`src/core/chapter-processor.js`)
   - Multi-Iteration Research mit State-Persistierung zwischen Iterationen
   - Real-time Content Preview mit automatischen Zwischenspeicherungen
   - Section-wise Processing mit granularen Checkpoints
   - Recovery-Points bei jedem User-Feedback
 
 ### 5.3 Stateful Validierungs-Engine
-- [ ] **Stateful Interactive Validation Engine** (`src/core/validation-engine.js`)
+- [x] **Stateful Interactive Validation Engine** (`src/core/validation-engine.js`)
   - User-guided Vollständigkeitsprüfung mit Zwischenspeicherung
   - Interactive Konsistenz-Analyse mit State-Tracking
   - Qualitäts-Metriken mit historischer State-Analyse
   - Progressive Validierung mit Checkpoint-Integration
+  - CLI: `node src/cli.js validate:engine`
 
 ## Phase 5.5: State-Aware Chat-Interface (Woche 4)
 
 ### 5.5.1 Stateful Chat-System
-- [ ] **Stateful CLI Chat Interface** (`src/interactive/chat-interface.js`)
+- [x] **Stateful CLI Chat Interface** (`src/interactive/chat-interface.js`)
   ```javascript
   export class StatefulChatInterface {
     constructor(stateManager) {
@@ -1251,7 +1242,7 @@ npm install --save-dev jest nodemon eslint prettier
   ```
 
 ### 5.5.3 State-Aware Interactive Workflow
-- [ ] **Stateful Session-based Workflow** (`src/interactive/interactive-workflow.js`)
+- [x] **Stateful Session-based Workflow** (`src/interactive/interactive-workflow.js`)
   ```javascript
   export class StatefulInteractiveWorkflow {
     constructor(stateManager, checkpointManager) {
@@ -1321,26 +1312,26 @@ npm install --save-dev jest nodemon eslint prettier
 ### 6.2 Spezielle Templates
 - [x] **Table of Contents** (`templates/toc-template.md`) – in Export-Bundle integriert
 - [x] **Appendix Templates** für Glossar, Referenzen, etc.
-- [ ] **Cross-Reference Templates** für Verlinkungen
+- [x] **Cross-Reference Templates** für Verlinkungen (`templates/crossref-template.md`) – via shared crossref module
  - [x] Template-Engine integriert (`src/generation/template-engine.js`) und im Section-Generator verdrahtet
 
 ## Phase 7: Testing und Qualitätssicherung (Woche 5)
 
 ### 7.1 Unit Tests
 - [x] **QDrant Client Tests** (`tests/unit/qdrant-client.test.js`)
-- [ ] **Claude Integration Tests** (`tests/unit/claude-client.test.js`)
+- [x] **Claude Integration Tests** (`tests/unit/claude-client.test.js`)
 - [x] **Content Analyzer Tests** (`tests/unit/content-analyzer.test.js`)
-- [ ] **Validation Engine Tests** (`tests/unit/validation-engine.test.js`)
+- [x] **Validation Engine Tests** (`test/validation-engine.test.js`)
 
 ### 7.2 Integration Tests
-- [ ] **End-to-End Pipeline Test** für ein einzelnes Kapitel
-- [ ] **Multi-Chapter Generation Test**
-- [ ] **Cross-Reference Validation Test**
+- [x] **End-to-End Pipeline Test** für ein einzelnes Kapitel (`test/e2e-pipeline.test.js`)
+- [x] **Multi-Chapter Generation Test** (`test/e2e-pipeline.test.js`)
+- [x] **Cross-Reference Validation Test** (siehe `test/crossrefs.test.js`)
 
 ### 7.3 Performance Tests
-- [ ] **QDrant Query Performance** unter verschiedenen Lasten
-- [ ] **Memory Usage** bei großen E-Book Strukturen
-- [ ] **Generation Speed** Optimierung
+- [x] **QDrant Query Performance** unter verschiedenen Lasten
+- [x] **Memory Usage** bei großen E-Book Strukturen
+- [x] **Generation Speed** Optimierung
 
 ## Phase 8: CLI und Benutzerinterface (Woche 5-6)
 
@@ -1414,7 +1405,7 @@ npm install --save-dev jest nodemon eslint prettier
   - EPUB für E-Reader
 
 ### 9.3 Incremental Updates
-- [ ] **Smart Regeneration**
+- [x] **Smart Regeneration**
   - Nur geänderte Kapitel neu generieren
   - Delta-Updates bei QDrant-Änderungen
   - Versionierung der generierten Inhalte
@@ -1422,19 +1413,19 @@ npm install --save-dev jest nodemon eslint prettier
 ## Phase 10: Dokumentation und Deployment (Woche 7-8)
 
 ### 10.1 API-Dokumentation
-- [ ] **Comprehensive API Docs** (`docs/api-documentation.md`)
-- [ ] **Configuration Guide** (`docs/configuration-guide.md`)
-- [ ] **Troubleshooting Guide** (`docs/troubleshooting.md`)
+- [x] **Comprehensive API Docs** (`docs/api-documentation.md`)
+- [x] **Configuration Guide** (`docs/configuration-guide.md`)
+- [x] **Troubleshooting Guide** (`docs/troubleshooting.md`)
 
 ### 10.2 Benutzer-Dokumentation
 - [x] **README mit Quickstart**
-- [ ] **Erweiterte Konfigurationsoptionen**
-- [ ] **Best Practices für Custom Queries**
+- [x] **Erweiterte Konfigurationsoptionen**
+- [x] **Best Practices für Custom Queries**
 
 ### 10.3 Deployment-Vorbereitung
-- [ ] **Docker Container** für einfache Bereitstellung
-- [ ] **GitHub Actions** für automatische Tests
-- [ ] **Release Pipeline** mit Versionierung
+- [x] **Docker Container** für einfache Bereitstellung
+- [x] **GitHub Actions** für automatische Tests
+- [x] **Release Pipeline** mit Versionierung
 
 ## Technische Spezifikationen
 

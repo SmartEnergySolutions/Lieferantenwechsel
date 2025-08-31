@@ -1,0 +1,26 @@
+{
+  "chapterId": "01-overview",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [],
+  "completedSections": [
+    {
+      "sectionName": "ANMELD Nachricht – Struktur",
+      "completedAt": "2025-08-31T21:12:19.349Z",
+      "generatedContent": {
+        "contentFile": "01-overview__anmeld-nachricht-struktur.md",
+        "wordCount": 49,
+        "qualityScore": 0,
+        "qualityChecks": {
+          "lengthOk": false,
+          "hasSources": false
+        },
+        "userFeedback": null
+      },
+      "searchResults": {
+        "totalResults": 0,
+        "selectedResultIds": []
+      }
+    }
+  ],
+  "searchHistory": []
+}

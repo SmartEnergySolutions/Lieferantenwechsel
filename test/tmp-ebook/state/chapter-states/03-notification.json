@@ -1,0 +1,26 @@
+{
+  "chapterId": "03-notification",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [],
+  "completedSections": [
+    {
+      "sectionName": "ANMELD Validierungen",
+      "completedAt": "2025-08-31T21:12:18.442Z",
+      "generatedContent": {
+        "contentFile": "03-notification__anmeld-validierungen.md",
+        "wordCount": 33,
+        "qualityScore": 0,
+        "qualityChecks": {
+          "lengthOk": false,
+          "hasSources": false
+        },
+        "userFeedback": null
+      },
+      "searchResults": {
+        "totalResults": 0,
+        "selectedResultIds": []
+      }
+    }
+  ],
+  "searchHistory": []
+}

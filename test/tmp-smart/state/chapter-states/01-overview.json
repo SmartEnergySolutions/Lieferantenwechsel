@@ -1,0 +1,17 @@
+{
+  "chapterId": "01-overview",
+  "completedSections": [
+    {
+      "sectionName": "Kurz",
+      "generatedContent": {
+        "contentFile": "01-overview__kurz.md",
+        "qualityScore": 1,
+        "wordCount": 65,
+        "qualityChecks": {
+          "lengthOk": true,
+          "hasSources": true
+        }
+      }
+    }
+  ]
+}

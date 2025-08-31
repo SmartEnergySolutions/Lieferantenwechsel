@@ -1,0 +1,23 @@
+{
+  "chapters": [
+    {
+      "id": "01-overview",
+      "title": "Overview",
+      "sections": [
+        "A",
+        "B"
+      ],
+      "validationCriteria": {
+        "requiredSections": 2
+      }
+    },
+    {
+      "id": "02-contract",
+      "title": "Contract",
+      "sections": [],
+      "validationCriteria": {
+        "requiredSections": 0
+      }
+    }
+  ]
+}

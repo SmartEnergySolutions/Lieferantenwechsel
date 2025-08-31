@@ -68,6 +68,14 @@ npm run qdrant:import-sample -- --file=./uploads/sample.ndjson --collection=will
 - HTML export:
 	- npm run export:html
 
+### Cross-reference validation
+
+Validate that all `[[ref:...]]` tokens in outputs resolve to existing anchors:
+
+```bash
+node src/cli.js outputs:crossrefs
+```
+
 ## PLAN Fortschritt
 
 Get completion from `PLAN.md` checkboxes:
@@ -96,3 +104,22 @@ QDRANT_STRICT=true npm test
 Key variables (see `.env.example`): QDRANT_URL, QDRANT_COLLECTION, EMBEDDINGS_PROVIDER/OPENAI_API_KEY, cache TTLs, AUTO_SAVE_INTERVAL, etc.
 
 The defaults enable fully offline operation; Qdrant usage is optional but recommended.
+
+## Docker
+
+Optional: Container bauen und ausführen.
+
+```bash
+docker build -t lieferantenwechsel .
+docker run --rm -v "$PWD/outputs":/app/outputs -v "$PWD/state":/app/state lieferantenwechsel
+```
+
+## CI
+
+GitHub Actions Workflow `.github/workflows/ci.yml` führt die Tests auf Node 18/20/22 aus.
+
+## Dokumentation
+
+- API: `docs/api-documentation.md`
+- Konfiguration: `docs/configuration-guide.md`
+- Troubleshooting: `docs/troubleshooting.md`

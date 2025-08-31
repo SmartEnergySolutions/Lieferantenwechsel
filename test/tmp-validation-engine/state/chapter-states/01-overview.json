@@ -1,0 +1,12 @@
+{
+  "chapterId": "01-overview",
+  "status": "IN_PROGRESS",
+  "completedSections": [
+    {
+      "sectionName": "Intro",
+      "generatedContent": {
+        "contentFile": "01-overview__intro.md"
+      }
+    }
+  ]
+}

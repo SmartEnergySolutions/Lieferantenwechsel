@@ -1,0 +1,26 @@
+{
+  "chapterId": "04-switch-execution",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [],
+  "completedSections": [
+    {
+      "sectionName": "Zeitliche Abwicklung",
+      "completedAt": "2025-08-31T21:12:19.371Z",
+      "generatedContent": {
+        "contentFile": "04-switch-execution__zeitliche-abwicklung.md",
+        "wordCount": 31,
+        "qualityScore": 0,
+        "qualityChecks": {
+          "lengthOk": false,
+          "hasSources": false
+        },
+        "userFeedback": null
+      },
+      "searchResults": {
+        "totalResults": 0,
+        "selectedResultIds": []
+      }
+    }
+  ],
+  "searchHistory": []
+}

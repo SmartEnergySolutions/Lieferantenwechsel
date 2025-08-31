@@ -1,0 +1,26 @@
+{
+  "chapterId": "06-billing",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [],
+  "completedSections": [
+    {
+      "sectionName": "Netz- und Lieferabrechnung",
+      "completedAt": "2025-08-31T21:12:18.466Z",
+      "generatedContent": {
+        "contentFile": "06-billing__netz-und-lieferabrechnung.md",
+        "wordCount": 33,
+        "qualityScore": 0,
+        "qualityChecks": {
+          "lengthOk": false,
+          "hasSources": false
+        },
+        "userFeedback": null
+      },
+      "searchResults": {
+        "totalResults": 0,
+        "selectedResultIds": []
+      }
+    }
+  ],
+  "searchHistory": []
+}

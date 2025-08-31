@@ -1,0 +1,26 @@
+{
+  "chapterId": "02-contract-conclusion",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [],
+  "completedSections": [
+    {
+      "sectionName": "Vertragsdaten und Stammdaten",
+      "completedAt": "2025-08-31T21:12:19.361Z",
+      "generatedContent": {
+        "contentFile": "02-contract-conclusion__vertragsdaten-und-stammdaten.md",
+        "wordCount": 46,
+        "qualityScore": 0,
+        "qualityChecks": {
+          "lengthOk": false,
+          "hasSources": false
+        },
+        "userFeedback": null
+      },
+      "searchResults": {
+        "totalResults": 0,
+        "selectedResultIds": []
+      }
+    }
+  ],
+  "searchHistory": []
+}

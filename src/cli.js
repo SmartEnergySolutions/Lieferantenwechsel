@@ -261,6 +261,18 @@ async function main() {
       console.log(JSON.stringify(rep, null, 2));
       return;
     }
+    if (cmd === "outputs:crossrefs" || cmd === "validate:crossrefs") {
+      const { validateCrossRefs } = require("./export/crossrefs");
+      try {
+        const res = await validateCrossRefs({ outputsDir: cfg.outputs.dir });
+        console.log(JSON.stringify(res, null, 2));
+        process.exitCode = res.valid ? 0 : 1;
+      } catch (e) {
+        console.log(JSON.stringify({ error: e.message }, null, 2));
+        process.exitCode = 1;
+      }
+      return;
+    }
     if (cmd === "outputs:coverage" || cmd === "validate:coverage") {
       const { coverageReport } = require("./state/coverage-validator");
       const min = parseInt(args["min"] || args["min-sections"] || "1", 10);
@@ -284,6 +296,15 @@ async function main() {
       const valid = !!(consistency.valid && outputs.valid && coverage.valid);
       console.log(JSON.stringify({ valid, consistency, outputs, coverage }, null, 2));
       process.exitCode = valid ? 0 : 1;
+      return;
+    }
+    if (cmd === "validate:engine") {
+      const fix = !!args.fix || !!args["--fix"]; 
+      const min = parseInt(args.min || "1", 10);
+      const { runValidationEngine } = require("./core/validation-engine");
+      const res = await runValidationEngine({ fix, minSectionsPerChapter: min, stateDir: cfg.state.dir, outputsDir: cfg.outputs.dir });
+      console.log(JSON.stringify(res, null, 2));
+      process.exitCode = res.valid ? 0 : 1;
       return;
     }
     if (cmd === "progress") {
@@ -463,6 +484,26 @@ async function main() {
       console.log(JSON.stringify({ chapterId, files: done }, null, 2));
       return;
     }
+    if (cmd === "process:chapter") {
+      const chapterId = args.chapter || args.c;
+      const limit = parseInt(args["sections-limit"] || args.limit || "0", 10);
+      if (!chapterId) { console.log("--chapter required"); return; }
+      const { ChapterProcessor } = require("./core/chapter-processor");
+      const cp = new ChapterProcessor(sm);
+      const res = await cp.processChapter({ chapterId, sectionsLimit: limit });
+      console.log(JSON.stringify(res, null, 2));
+      return;
+    }
+    if (cmd === "interactive:workflow") {
+      const chapterId = args.chapter || args.c || "01-overview";
+      const { StatefulInteractiveWorkflow } = require("./interactive/interactive-workflow");
+      const wf = new StatefulInteractiveWorkflow(sm, null);
+      await wf.reviewEBookStructure();
+      await wf.interactiveChapterGeneration({ id: chapterId });
+      const consistency = await wf.validateStateConsistency();
+      console.log(JSON.stringify({ ran: true, chapterId, consistency }, null, 2));
+      return;
+    }
     if (cmd === "generate:all") {
       const { CHAPTERS } = require("./config/ebook-structure");
       const limit = parseInt(args["sections-limit"] || args.limit || "0", 10);
@@ -490,6 +531,15 @@ async function main() {
         }
       }
       console.log(JSON.stringify({ files: generated.length, list: generated }, null, 2));
+      return;
+    }
+    if (cmd === "regenerate:smart") {
+      const min = parseFloat(args.min || "0.8");
+      const chapterId = args.chapter || args.c || null;
+      const maxImprovs = parseInt(args.max || "1", 10);
+      const { runSmartRegeneration } = require("./core/smart-regeneration");
+      const rep = await runSmartRegeneration({ stateManager: sm, minScore: min, chapterId, maxImprovements: maxImprovs });
+      console.log(JSON.stringify(rep, null, 2));
       return;
     }
 

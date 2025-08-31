@@ -2,6 +2,7 @@
 
 const fs = require('fs-extra');
 const path = require('path');
+const { buildAnchors, resolveRefs } = require('./crossrefs');
 
 function toTitle(name) {
   const base = name.replace(/^[0-9]+[-_]?/, '').replace(/\.(md|markdown)$/i, '');
@@ -12,32 +13,7 @@ function anchorFor(title) {
   return title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
 }
 
-function buildAnchors(files) {
-  const map = new Map();
-  for (const f of files) {
-    const section = toTitle(f.file);
-    const anchor = anchorFor(section);
-    const base = f.file.replace(/\.(md|markdown)$/i, '');
-    map.set(base.toLowerCase(), { section, anchor });
-    // Key by chapter and slug
-    const m = base.match(/^(.*)__([\w-]+)$/);
-    if (m) {
-      map.set(`${(m[1] || '').toLowerCase()}::${(m[2] || '').toLowerCase()}`, { section, anchor });
-    }
-    // Key by section title lowercased
-    map.set(section.toLowerCase(), { section, anchor });
-  }
-  return map;
-}
-
-function resolveRefs(md, anchors) {
-  return (md || '').replace(/\[\[ref:([^\]]+)\]\]/gi, (_, raw) => {
-    const key = String(raw || '').trim().toLowerCase();
-    const hit = anchors.get(key);
-    if (hit) return `[${hit.section}](#${hit.anchor})`;
-    return _; // leave untouched if not found
-  });
-}
+// crossref helpers moved to ./crossrefs
 
 async function listMarkdownFiles(outputsDir) {
   const chapters = (await fs.pathExists(outputsDir)) ? await fs.readdir(outputsDir) : [];
@@ -94,7 +70,7 @@ async function bundleMarkdown({ outputsDir, destFile, toFile, title = 'Lieferant
   }
   for (const f of files) {
   let raw = await fs.readFile(f.full, 'utf-8');
-  raw = resolveRefs(raw, anchors);
+  raw = await resolveRefs(raw, anchors);
     // ensure the first heading has a predictable anchor
     const section = toTitle(f.file);
     parts.push(`\n\n## ${section}\n`);

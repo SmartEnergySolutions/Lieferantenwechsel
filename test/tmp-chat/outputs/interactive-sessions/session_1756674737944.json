@@ -1,0 +1,31 @@
+{
+  "id": "session_1756674737944",
+  "startTime": "2025-08-31T21:12:17.944Z",
+  "ebookConfig": {
+    "interactive": true,
+    "mode": "chat"
+  },
+  "chapterProgress": {},
+  "userPreferences": {},
+  "feedbackHistory": [
+    {
+      "type": "search_results",
+      "feedback": {
+        "liked": [
+          0,
+          1
+        ]
+      },
+      "context": {
+        "context": {
+          "chapterId": "01-overview",
+          "term": "Test"
+        },
+        "statePhase": "INITIALIZATION"
+      },
+      "timestamp": "2025-08-31T21:12:17.951Z"
+    }
+  ],
+  "searchStrategies": {},
+  "qualityMetrics": {}
+}

@@ -1,0 +1,104 @@
+{
+  "checkpointId": "cp_1756674737824",
+  "createdAt": "2025-08-31T21:12:17.824Z",
+  "type": "CHAPTER_PROGRESS",
+  "description": "Post-section Marktrollen und Datenflüsse",
+  "stateSnapshot": {
+    "currentGeneration": {
+      "generationId": "gen_1756674737754",
+      "startTime": "2025-08-31T21:12:17.754Z",
+      "lastUpdate": "2025-08-31T21:12:17.815Z",
+      "version": "1.0.0",
+      "status": "INITIALIZED",
+      "currentPhase": {
+        "phase": "CHAPTER_PROCESS",
+        "chapterId": "01-overview",
+        "interruptible": true,
+        "lastCheckpoint": "cp_1756674737801"
+      },
+      "completedChapters": [],
+      "globalSettings": {
+        "interactiveMode": false,
+        "detailLevel": "standard",
+        "maxIterationsPerSection": 4,
+        "autoSaveInterval": 30000
+      },
+      "userPreferences": {
+        "searchStrategy": {
+          "alpha": 0.7,
+          "priorityChunkTypes": [
+            "pseudocode_flow",
+            "pseudocode_validations_rules"
+          ],
+          "adaptiveKeywords": []
+        },
+        "contentPreferences": {
+          "exampleDensity": "medium",
+          "technicalDetail": "medium",
+          "crossReferenceStyle": "inline"
+        }
+      },
+      "statistics": {
+        "totalSearchQueries": 0,
+        "totalUserInteractions": 0,
+        "averageSectionTime": 0,
+        "cacheHitRatio": 0
+      }
+    },
+    "chapterStates": {
+      "01-overview": {
+        "chapterId": "01-overview",
+        "status": "IN_PROGRESS",
+        "pendingDecisions": [],
+        "completedSections": [
+          {
+            "sectionName": "ANMELD Nachricht – Struktur",
+            "completedAt": "2025-08-31T21:12:17.791Z",
+            "generatedContent": {
+              "contentFile": "01-overview__anmeld-nachricht-struktur.md",
+              "wordCount": 49,
+              "qualityScore": 0,
+              "qualityChecks": {
+                "lengthOk": false,
+                "hasSources": false
+              },
+              "userFeedback": null
+            },
+            "searchResults": {
+              "totalResults": 0,
+              "selectedResultIds": []
+            }
+          },
+          {
+            "sectionName": "Marktrollen und Datenflüsse",
+            "completedAt": "2025-08-31T21:12:17.814Z",
+            "generatedContent": {
+              "contentFile": "01-overview__marktrollen-und-datenfl-sse.md",
+              "wordCount": 47,
+              "qualityScore": 0,
+              "qualityChecks": {
+                "lengthOk": false,
+                "hasSources": false
+              },
+              "userFeedback": null
+            },
+            "searchResults": {
+              "totalResults": 0,
+              "selectedResultIds": []
+            }
+          }
+        ],
+        "searchHistory": []
+      }
+    },
+    "searchCache": {}
+  },
+  "resumeInstructions": {
+    "nextPhase": "CHAPTER_PROCESS"
+  },
+  "metadata": {
+    "generatedContent": {
+      "completedChapters": 0
+    }
+  }
+}

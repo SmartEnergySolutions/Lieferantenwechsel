@@ -3,12 +3,15 @@ const logger = require('../utils/logger');
 const { QdrantClient } = require('../retrieval/qdrant-client');
 const { embedText } = require('../retrieval/embeddings');
 const { basicFilter, mergeWeighted } = require('../retrieval/search-strategies');
+const { SessionPersistence } = require('./session-persistence');
 
 class ChatInterface {
-  constructor(stateManager, sessionManager, { checkpointOnReview = false } = {}) {
+  constructor(stateManager, sessionManager, { checkpointOnReview = false, sessionPersistence = null } = {}) {
     this.stateManager = stateManager;
     this.sessionManager = sessionManager;
     this.checkpointOnReview = checkpointOnReview;
+    this.currentContext = null;
+    this.sessionPersistence = sessionPersistence instanceof SessionPersistence ? sessionPersistence : (sessionPersistence || null);
   }
 
   async startInteractiveSession() {
@@ -28,7 +31,7 @@ class ChatInterface {
       results = dedupeByIdOrSource(results);
       results = sortByRelevance(results, { priorityChunkTypes: priority, keywords: [term] });
     } catch {}
-    await this.displaySearchResults(results, { chapterId, term, alpha });
+  await this.displaySearchResults(results, { chapterId, term, alpha });
     const total = results.length;
     const selRaw = await this.ask(`Auswahlindizes (z.B. 0,1,2 oder top:3, Enter=top:3): `);
     const { parseSelectArg } = require('./review');
@@ -53,13 +56,19 @@ class ChatInterface {
 
   async displaySearchResults(results, context) {
     logger.info('search results', { chapterId: context.chapterId, term: context.term, alpha: context.alpha, count: results.length });
+    try { await this.saveInteractionContext(context, results); } catch {}
     const { printResults } = require('./review');
     printResults(results);
   }
 
   async handleGracefulShutdown() {
     logger.warn('interactive shutdown');
-    try { await this.stateManager.saveState(); } catch {}
+    try {
+      await this.stateManager.saveState();
+      if (this.checkpointOnReview) {
+        await this.stateManager.createCheckpoint('Interactive session shutdown', 'EMERGENCY');
+      }
+    } catch {}
   }
 
   async searchEmbedFilter(term, { alpha = 0.7, limit = 10 } = {}) {
@@ -75,6 +84,50 @@ class ChatInterface {
   ask(prompt) {
     const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
     return new Promise((resolve) => rl.question(prompt, (ans) => { rl.close(); resolve(ans); }));
+  }
+
+  async saveInteractionContext(context, data) {
+    const s = (await this.stateManager.getCurrentState()) || {};
+    s.metadata = s.metadata || {};
+    s.metadata.interactions = s.metadata.interactions || [];
+    const entry = { context, items: Array.isArray(data) ? data.length : (data ? 1 : 0), savedAt: new Date().toISOString() };
+    s.metadata.interactions.push(entry);
+    await this.stateManager.saveState(s);
+    this.currentContext = context || null;
+    return entry;
+  }
+
+  async persistFeedback(type, feedback) {
+    try {
+      // ensure session persistence available
+      if (!this.sessionPersistence) this.sessionPersistence = new SessionPersistence();
+      if (!this.sessionPersistence.currentSessionId) {
+        await this.sessionPersistence.startNewSession({ interactive: true, mode: 'chat' });
+      }
+      const ctx = { context: this.currentContext || {}, statePhase: (await this.stateManager.getCurrentState())?.currentPhase?.phase || null };
+      await this.sessionPersistence.saveFeedback(type, feedback, ctx);
+      // update global interaction stats
+      const s = (await this.stateManager.getCurrentState()) || {};
+      s.statistics = s.statistics || {};
+      s.statistics.totalUserInteractions = (s.statistics.totalUserInteractions || 0) + 1;
+      await this.stateManager.saveState(s);
+      return true;
+    } catch (e) {
+      logger.warn('persistFeedback failed', { error: e.message });
+      return false;
+    }
+  }
+
+  async resumeFromPendingDecision() {
+    try {
+      const list = await this.sessionManager.listPendingDecisions();
+      if (!list || !list.length) return null;
+      const latest = list[list.length - 1];
+      this.currentContext = { chapterId: latest.chapterId, type: latest.type };
+      return latest;
+    } catch {
+      return null;
+    }
   }
 }
 

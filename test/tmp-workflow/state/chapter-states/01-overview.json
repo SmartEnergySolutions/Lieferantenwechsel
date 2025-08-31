@@ -1,0 +1,16 @@
+{
+  "chapterId": "01-overview",
+  "status": "REVIEWED",
+  "pendingDecisions": [
+    {
+      "type": "SEARCH_RESULTS_SELECTION",
+      "context": {
+        "term": "auto",
+        "results": {
+          "points": []
+        }
+      },
+      "decisionId": "decision_1756674738633"
+    }
+  ]
+}

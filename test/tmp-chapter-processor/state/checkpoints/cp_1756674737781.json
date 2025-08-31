@@ -1,0 +1,58 @@
+{
+  "checkpointId": "cp_1756674737781",
+  "createdAt": "2025-08-31T21:12:17.781Z",
+  "type": "PHASE_TRANSITION",
+  "description": "Pre-section ANMELD Nachricht – Struktur",
+  "stateSnapshot": {
+    "currentGeneration": {
+      "generationId": "gen_1756674737754",
+      "startTime": "2025-08-31T21:12:17.754Z",
+      "lastUpdate": "2025-08-31T21:12:17.777Z",
+      "version": "1.0.0",
+      "status": "INITIALIZED",
+      "currentPhase": {
+        "phase": "CHAPTER_PROCESS",
+        "chapterId": "01-overview",
+        "interruptible": true
+      },
+      "completedChapters": [],
+      "globalSettings": {
+        "interactiveMode": false,
+        "detailLevel": "standard",
+        "maxIterationsPerSection": 4,
+        "autoSaveInterval": 30000
+      },
+      "userPreferences": {
+        "searchStrategy": {
+          "alpha": 0.7,
+          "priorityChunkTypes": [
+            "pseudocode_flow",
+            "pseudocode_validations_rules"
+          ],
+          "adaptiveKeywords": []
+        },
+        "contentPreferences": {
+          "exampleDensity": "medium",
+          "technicalDetail": "medium",
+          "crossReferenceStyle": "inline"
+        }
+      },
+      "statistics": {
+        "totalSearchQueries": 0,
+        "totalUserInteractions": 0,
+        "averageSectionTime": 0,
+        "cacheHitRatio": 0
+      }
+    },
+    "chapterStates": {},
+    "searchCache": {}
+  },
+  "resumeInstructions": {
+    "nextPhase": "CHAPTER_PROCESS"
+  },
+  "metadata": {
+    "generatedContent": {
+      "completedChapters": 0
+    }
+  }
+}

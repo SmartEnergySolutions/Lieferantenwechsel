@@ -1,0 +1,76 @@
+{
+  "checkpointId": "cp_1756674739037",
+  "createdAt": "2025-08-31T21:12:19.037Z",
+  "type": "PHASE_TRANSITION",
+  "description": "SmartRegeneration:POST",
+  "stateSnapshot": {
+    "currentGeneration": {
+      "generationId": "gen_1756674739011",
+      "startTime": "2025-08-31T21:12:19.011Z",
+      "lastUpdate": "2025-08-31T21:12:19.029Z",
+      "version": "1.0.0",
+      "status": "INITIALIZED",
+      "currentPhase": {
+        "phase": "INITIALIZATION",
+        "interruptible": true,
+        "lastCheckpoint": "cp_1756674739022"
+      },
+      "completedChapters": [],
+      "globalSettings": {
+        "interactiveMode": false,
+        "detailLevel": "standard",
+        "maxIterationsPerSection": 4,
+        "autoSaveInterval": 30000
+      },
+      "userPreferences": {
+        "searchStrategy": {
+          "alpha": 0.7,
+          "priorityChunkTypes": [
+            "pseudocode_flow",
+            "pseudocode_validations_rules"
+          ],
+          "adaptiveKeywords": []
+        },
+        "contentPreferences": {
+          "exampleDensity": "medium",
+          "technicalDetail": "medium",
+          "crossReferenceStyle": "inline"
+        }
+      },
+      "statistics": {
+        "totalSearchQueries": 0,
+        "totalUserInteractions": 0,
+        "averageSectionTime": 0,
+        "cacheHitRatio": 0
+      }
+    },
+    "chapterStates": {
+      "01-overview": {
+        "chapterId": "01-overview",
+        "completedSections": [
+          {
+            "sectionName": "Kurz",
+            "generatedContent": {
+              "contentFile": "01-overview__kurz.md",
+              "qualityScore": 1,
+              "wordCount": 65,
+              "qualityChecks": {
+                "lengthOk": true,
+                "hasSources": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "searchCache": {}
+  },
+  "resumeInstructions": {
+    "nextPhase": "INITIALIZATION"
+  },
+  "metadata": {
+    "generatedContent": {
+      "completedChapters": 0
+    }
+  }
+}

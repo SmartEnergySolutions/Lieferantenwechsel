@@ -1,0 +1,26 @@
+{
+  "chapterId": "07-quality",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [],
+  "completedSections": [
+    {
+      "sectionName": "Plausibilitäten",
+      "completedAt": "2025-08-31T21:12:19.383Z",
+      "generatedContent": {
+        "contentFile": "07-quality__plausibilit-ten.md",
+        "wordCount": 31,
+        "qualityScore": 0,
+        "qualityChecks": {
+          "lengthOk": false,
+          "hasSources": false
+        },
+        "userFeedback": null
+      },
+      "searchResults": {
+        "totalResults": 0,
+        "selectedResultIds": []
+      }
+    }
+  ],
+  "searchHistory": []
+}
