@@ -1,0 +1,20 @@
+{
+  "generationId": "gen1",
+  "status": "IN_PROGRESS",
+  "currentPhase": {
+    "phase": "WRITING"
+  },
+  "completedChapters": [
+    "01-overview"
+  ],
+  "globalSettings": {
+    "autoSaveInterval": 30000
+  },
+  "userPreferences": {
+    "searchStrategy": {
+      "alpha": 0.7
+    },
+    "contentPreferences": {}
+  },
+  "statistics": {}
+}

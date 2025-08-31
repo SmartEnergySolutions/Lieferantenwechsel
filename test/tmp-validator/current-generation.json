@@ -1,0 +1,18 @@
+{
+  "generationId": "gen_test",
+  "status": "INITIALIZED",
+  "currentPhase": {
+    "phase": "INITIALIZATION"
+  },
+  "globalSettings": {
+    "autoSaveInterval": 30000
+  },
+  "userPreferences": {
+    "searchStrategy": {
+      "alpha": 0.8
+    },
+    "contentPreferences": {}
+  },
+  "statistics": {},
+  "completedChapters": []
+}

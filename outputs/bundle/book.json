@@ -1,0 +1,23 @@
+{
+  "title": "Test",
+  "generatedAt": "2025-08-31T19:29:18.670Z",
+  "chapters": [
+    {
+      "id": "01-overview",
+      "title": "Overview",
+      "files": [
+        {
+          "file": "01-overview__testabschnitt.md",
+          "path": "/home/thorsten/Development/Lieferantenwechsel/outputs/01-overview/01-overview__testabschnitt.md"
+        }
+      ],
+      "sectionsCount": 1
+    },
+    {
+      "id": "02-contract",
+      "title": "Contract",
+      "files": [],
+      "sectionsCount": 0
+    }
+  ]
+}

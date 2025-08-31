@@ -1,0 +1,180 @@
+{
+  "checkpointId": "cp_1756638205152",
+  "createdAt": "2025-08-31T11:03:25.152Z",
+  "type": "AUTO",
+  "description": "test CP",
+  "stateSnapshot": {
+    "currentGeneration": {
+      "generationId": "gen_1756638205146",
+      "startTime": "2025-08-31T11:03:25.146Z",
+      "lastUpdate": "2025-08-31T11:03:25.147Z",
+      "version": "1.0.0",
+      "status": "INITIALIZED",
+      "currentPhase": {
+        "phase": "INITIALIZATION",
+        "interruptible": true,
+        "lastCheckpoint": null
+      },
+      "completedChapters": [],
+      "globalSettings": {
+        "interactiveMode": false,
+        "detailLevel": "standard",
+        "maxIterationsPerSection": 4,
+        "autoSaveInterval": 30000
+      },
+      "userPreferences": {
+        "searchStrategy": {
+          "alpha": 0.7,
+          "priorityChunkTypes": [
+            "pseudocode_flow",
+            "pseudocode_validations_rules"
+          ],
+          "adaptiveKeywords": []
+        },
+        "contentPreferences": {
+          "exampleDensity": "medium",
+          "technicalDetail": "medium",
+          "crossReferenceStyle": "inline"
+        }
+      },
+      "statistics": {
+        "totalSearchQueries": 0,
+        "totalUserInteractions": 0,
+        "averageSectionTime": 0,
+        "cacheHitRatio": 0
+      }
+    },
+    "chapterStates": {
+      "01-overview": {
+        "chapterId": "01-overview",
+        "status": "IN_PROGRESS",
+        "pendingDecisions": [
+          {
+            "type": "SEARCH_RESULTS_SELECTION",
+            "context": {
+              "term": "ANMELD",
+              "results": []
+            },
+            "presentedAt": "2025-08-30T22:31:56.488Z",
+            "timeoutAt": "2025-08-30T22:36:56.488Z",
+            "decisionId": "decision_1756593116490"
+          }
+        ],
+        "completedDecisions": [
+          {
+            "decisionId": "decision_1756593469302",
+            "resolution": {
+              "selected": [
+                1
+              ],
+              "approved": true
+            },
+            "resolvedAt": "2025-08-31T00:06:21.745Z"
+          },
+          {
+            "decisionId": "decision_1756593277546",
+            "resolution": {
+              "selected": [],
+              "approved": true
+            },
+            "resolvedAt": "2025-08-31T00:06:29.678Z"
+          },
+          {
+            "decisionId": "decision_1756638149737",
+            "resolution": {
+              "approved": true
+            },
+            "resolvedAt": "2025-08-31T11:02:29.740Z"
+          },
+          {
+            "decisionId": "decision_1756638205024",
+            "resolution": {
+              "approved": true
+            },
+            "resolvedAt": "2025-08-31T11:03:25.027Z"
+          },
+          {
+            "decisionId": "decision_1756638205039",
+            "resolution": {
+              "selected": [
+                0,
+                1
+              ],
+              "approved": true
+            },
+            "resolvedAt": "2025-08-31T11:03:25.042Z"
+          }
+        ],
+        "searchHistory": [
+          {
+            "decisionId": "decision_1756638205039",
+            "type": "EMBEDDED_SEARCH_SELECTION",
+            "term": "ANMELD",
+            "alpha": null,
+            "selectedIndices": [
+              0,
+              1
+            ],
+            "selectedResultIds": [
+              1,
+              2
+            ],
+            "selectedItems": [
+              {
+                "id": 1,
+                "payload": {
+                  "source_document": "Spec-ANMELD.md",
+                  "chunk_type": "pseudocode_flow",
+                  "content": "ANMELD details..."
+                }
+              },
+              {
+                "id": 2,
+                "payload": {
+                  "source_document": "Process-Fristen.md",
+                  "chunk_type": "structured_table",
+                  "content": "Fristen..."
+                }
+              }
+            ],
+            "count": 2,
+            "decidedAt": "2025-08-31T11:03:25.042Z",
+            "strategy": "embed+filter"
+          }
+        ],
+        "completedSections": [
+          {
+            "sectionName": "Testabschnitt",
+            "completedAt": "2025-08-31T11:03:25.049Z",
+            "generatedContent": {
+              "contentFile": "01-overview__testabschnitt.md",
+              "wordCount": 15,
+              "qualityScore": 0.4,
+              "qualityChecks": {
+                "lengthOk": false,
+                "hasSources": true
+              },
+              "userFeedback": null
+            },
+            "searchResults": {
+              "totalResults": 2,
+              "selectedResultIds": [
+                1,
+                2
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "searchCache": {}
+  },
+  "resumeInstructions": {
+    "nextPhase": "INITIALIZATION"
+  },
+  "metadata": {
+    "generatedContent": {
+      "completedChapters": 0
+    }
+  }
+}

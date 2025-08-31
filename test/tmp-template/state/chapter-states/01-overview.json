@@ -1,0 +1,26 @@
+{
+  "chapterId": "01-overview",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [],
+  "completedSections": [
+    {
+      "sectionName": "Intro Abschnitt",
+      "completedAt": "2025-08-31T19:29:19.413Z",
+      "generatedContent": {
+        "contentFile": "01-overview__intro-abschnitt.md",
+        "wordCount": 45,
+        "qualityScore": 0,
+        "qualityChecks": {
+          "lengthOk": false,
+          "hasSources": false
+        },
+        "userFeedback": null
+      },
+      "searchResults": {
+        "totalResults": 0,
+        "selectedResultIds": []
+      }
+    }
+  ],
+  "searchHistory": []
+}

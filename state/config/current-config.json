@@ -1,0 +1,29 @@
+{
+  "chapters": [
+    {
+      "id": "01-overview",
+      "title": "Overview",
+      "level": "standard",
+      "sections": [
+        "A",
+        "B"
+      ],
+      "searchQueries": [],
+      "dependencies": [],
+      "validationCriteria": {
+        "requiredSections": 2
+      }
+    },
+    {
+      "id": "02-contract",
+      "title": "Contract",
+      "level": "standard",
+      "sections": [],
+      "searchQueries": [],
+      "dependencies": [],
+      "validationCriteria": {
+        "requiredSections": 0
+      }
+    }
+  ]
+}

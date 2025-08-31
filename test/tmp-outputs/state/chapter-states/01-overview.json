@@ -1,0 +1,17 @@
+{
+  "chapterId": "01-overview",
+  "status": "IN_PROGRESS",
+  "completedSections": [
+    {
+      "sectionName": "Intro",
+      "completedAt": "2025-08-31T19:29:19.071Z",
+      "generatedContent": {
+        "contentFile": "01-overview__intro.md"
+      },
+      "searchResults": {
+        "totalResults": 0,
+        "selectedResultIds": []
+      }
+    }
+  ]
+}
