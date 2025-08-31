@@ -10,11 +10,7 @@
         "Die Rolle der Marktkommunikation im Smart Grid",
         "Stichworte: Marktkommunikation heute (MaKo 2025); Digitalisierung der Energiewirtschaft; Intelligente Netze; Flexibilitätsmärkte"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 3
-      }
+      "validationCriteria": { "requiredSections": 3 }
     },
     {
       "id": "00-preface-intermediate",
@@ -25,12 +21,7 @@
         "Effizienzsteigerung durch standardisierte Prozesse",
         "Die Rolle der Marktkommunikation im Smart Grid",
         "Stichworte: Marktkommunikation heute (MaKo 2025); Digitalisierung der Energiewirtschaft; Intelligente Netze; Flexibilitätsmärkte"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "00-preface-advanced",
@@ -41,12 +32,7 @@
         "Effizienzsteigerung durch standardisierte Prozesse",
         "Die Rolle der Marktkommunikation im Smart Grid",
         "Stichworte: Marktkommunikation heute (MaKo 2025); Digitalisierung der Energiewirtschaft; Intelligente Netze; Flexibilitätsmärkte"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "00-preface-expert",
@@ -57,13 +43,9 @@
         "Effizienzsteigerung durch standardisierte Prozesse",
         "Die Rolle der Marktkommunikation im Smart Grid",
         "Stichworte: Marktkommunikation heute (MaKo 2025); Digitalisierung der Energiewirtschaft; Intelligente Netze; Flexibilitätsmärkte"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "01-gpke-intro-beginner",
       "title": "Einführung in die GPKE",
@@ -75,11 +57,7 @@
         "Die Rolle der Bundesnetzagentur (BNetzA)",
         "Stichworte: Energiewirtschaftsgesetz (EnWG); StromNZV; Messstellenbetriebsgesetz (MsbG); BK6-22-024"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 3
-      }
+      "validationCriteria": { "requiredSections": 3 }
     },
     {
       "id": "01-gpke-intro-intermediate",
@@ -91,12 +69,7 @@
         "Historische Entwicklung und regulatorischer Hintergrund",
         "Die Rolle der Bundesnetzagentur (BNetzA)",
         "Stichworte: Energiewirtschaftsgesetz (EnWG); StromNZV; Messstellenbetriebsgesetz (MsbG); BK6-22-024"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "01-gpke-intro-advanced",
@@ -108,12 +81,7 @@
         "Historische Entwicklung und regulatorischer Hintergrund",
         "Die Rolle der Bundesnetzagentur (BNetzA)",
         "Stichworte: Energiewirtschaftsgesetz (EnWG); StromNZV; Messstellenbetriebsgesetz (MsbG); BK6-22-024"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "01-gpke-intro-expert",
@@ -125,13 +93,9 @@
         "Historische Entwicklung und regulatorischer Hintergrund",
         "Die Rolle der Bundesnetzagentur (BNetzA)",
         "Stichworte: Energiewirtschaftsgesetz (EnWG); StromNZV; Messstellenbetriebsgesetz (MsbG); BK6-22-024"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "02-market-roles-beginner",
       "title": "Die Marktpartner und ihre Zuständigkeiten",
@@ -144,11 +108,7 @@
         "Der Kunde: Rechte und Informationspflichten",
         "Stichworte: Lieferantenrahmenvertrag; Netznutzungsvertrag; Messstellenvertrag; § 13 StromNZV; Zählpunkt; Bilanzkreis"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 4
-      }
+      "validationCriteria": { "requiredSections": 4 }
     },
     {
       "id": "02-market-roles-intermediate",
@@ -161,12 +121,7 @@
         "Marktlokation (MaLo) und Messlokation (MeLo): Definition und Unterschiede",
         "Der Kunde: Rechte und Informationspflichten",
         "Stichworte: Lieferantenrahmenvertrag; Netznutzungsvertrag; Messstellenvertrag; § 13 StromNZV; Zählpunkt; Bilanzkreis"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "02-market-roles-advanced",
@@ -179,12 +134,7 @@
         "Marktlokation (MaLo) und Messlokation (MeLo): Definition und Unterschiede",
         "Der Kunde: Rechte und Informationspflichten",
         "Stichworte: Lieferantenrahmenvertrag; Netznutzungsvertrag; Messstellenvertrag; § 13 StromNZV; Zählpunkt; Bilanzkreis"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "02-market-roles-expert",
@@ -197,13 +147,9 @@
         "Marktlokation (MaLo) und Messlokation (MeLo): Definition und Unterschiede",
         "Der Kunde: Rechte und Informationspflichten",
         "Stichworte: Lieferantenrahmenvertrag; Netznutzungsvertrag; Messstellenvertrag; § 13 StromNZV; Zählpunkt; Bilanzkreis"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "03-termination-beginner",
       "title": "Die Kündigung und der Beginn des Wechsels",
@@ -215,11 +161,7 @@
         "Sonderkündigungsrechte",
         "Stichworte: Kündigungsschreiben; Vertragslaufzeit; AGB des alten Lieferanten"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 3
-      }
+      "validationCriteria": { "requiredSections": 3 }
     },
     {
       "id": "03-termination-intermediate",
@@ -231,12 +173,7 @@
         "Fristen und Kündigungsmodalitäten",
         "Sonderkündigungsrechte",
         "Stichworte: Kündigungsschreiben; Vertragslaufzeit; AGB des alten Lieferanten"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "03-termination-advanced",
@@ -248,12 +185,7 @@
         "Fristen und Kündigungsmodalitäten",
         "Sonderkündigungsrechte",
         "Stichworte: Kündigungsschreiben; Vertragslaufzeit; AGB des alten Lieferanten"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "03-termination-expert",
@@ -265,13 +197,9 @@
         "Fristen und Kündigungsmodalitäten",
         "Sonderkündigungsrechte",
         "Stichworte: Kündigungsschreiben; Vertragslaufzeit; AGB des alten Lieferanten"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "04-registration-beginner",
       "title": "Die Anmeldung zur Netznutzung durch den neuen Lieferanten",
@@ -283,11 +211,7 @@
         "Positive und negative Rückmeldungen (CONTRL, APERAK)",
         "Stichworte: UTILMD-Segmentstruktur; Prüfidentifikatoren; Netzgebiet; EIC-Code"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 4
-      }
+      "validationCriteria": { "requiredSections": 4 }
     },
     {
       "id": "04-registration-intermediate",
@@ -299,12 +223,7 @@
         "Prüfung der Anmeldung durch den Netzbetreiber",
         "Positive und negative Rückmeldungen (CONTRL, APERAK)",
         "Stichworte: UTILMD-Segmentstruktur; Prüfidentifikatoren; Netzgebiet; EIC-Code"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "04-registration-advanced",
@@ -316,12 +235,7 @@
         "Prüfung der Anmeldung durch den Netzbetreiber",
         "Positive und negative Rückmeldungen (CONTRL, APERAK)",
         "Stichworte: UTILMD-Segmentstruktur; Prüfidentifikatoren; Netzgebiet; EIC-Code"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "04-registration-expert",
@@ -333,13 +247,9 @@
         "Prüfung der Anmeldung durch den Netzbetreiber",
         "Positive und negative Rückmeldungen (CONTRL, APERAK)",
         "Stichworte: UTILMD-Segmentstruktur; Prüfidentifikatoren; Netzgebiet; EIC-Code"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "05-confirmation-beginner",
       "title": "Die Bestätigung und die Zuordnung",
@@ -351,11 +261,7 @@
         "Der vorläufige Lieferantenwechsel",
         "Stichworte: Bestätigungsschreiben; Lieferbeginn; § 20a EnWG"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 3
-      }
+      "validationCriteria": { "requiredSections": 3 }
     },
     {
       "id": "05-confirmation-intermediate",
@@ -367,12 +273,7 @@
         "Kommunikationskaskade: Wer informiert wen?",
         "Der vorläufige Lieferantenwechsel",
         "Stichworte: Bestätigungsschreiben; Lieferbeginn; § 20a EnWG"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "05-confirmation-advanced",
@@ -384,12 +285,7 @@
         "Kommunikationskaskade: Wer informiert wen?",
         "Der vorläufige Lieferantenwechsel",
         "Stichworte: Bestätigungsschreiben; Lieferbeginn; § 20a EnWG"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "05-confirmation-expert",
@@ -401,13 +297,9 @@
         "Kommunikationskaskade: Wer informiert wen?",
         "Der vorläufige Lieferantenwechsel",
         "Stichworte: Bestätigungsschreiben; Lieferbeginn; § 20a EnWG"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "06-message-formats-beginner",
       "title": "Die Sprache der Marktkommunikation: Nachrichtenformate",
@@ -420,11 +312,7 @@
         "Weitere relevante Formate im Überblick (ORDERS, INVOIC etc.)",
         "Stichworte: UN/EDIFACT; Segmentaufbau; Datenformate; Validierung von Nachrichten"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 4
-      }
+      "validationCriteria": { "requiredSections": 4 }
     },
     {
       "id": "06-message-formats-intermediate",
@@ -437,12 +325,7 @@
         "APERAK und CONTRL: Fehlermeldungen verstehen",
         "Weitere relevante Formate im Überblick (ORDERS, INVOIC etc.)",
         "Stichworte: UN/EDIFACT; Segmentaufbau; Datenformate; Validierung von Nachrichten"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "06-message-formats-advanced",
@@ -455,12 +338,7 @@
         "APERAK und CONTRL: Fehlermeldungen verstehen",
         "Weitere relevante Formate im Überblick (ORDERS, INVOIC etc.)",
         "Stichworte: UN/EDIFACT; Segmentaufbau; Datenformate; Validierung von Nachrichten"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "06-message-formats-expert",
@@ -473,13 +351,9 @@
         "APERAK und CONTRL: Fehlermeldungen verstehen",
         "Weitere relevante Formate im Überblick (ORDERS, INVOIC etc.)",
         "Stichworte: UN/EDIFACT; Segmentaufbau; Datenformate; Validierung von Nachrichten"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "07-initial-reading-beginner",
       "title": "Der Anfangszählerstand – Das A und O der Abrechnung",
@@ -492,11 +366,7 @@
         "Bedeutung für die saubere Abgrenzung der Abrechnung",
         "Stichworte: Fernauslesung; Manuelle Zählerstandserfassung; Plausibilitätsprüfung; § 40 Abs. 3 EnWG"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 4
-      }
+      "validationCriteria": { "requiredSections": 4 }
     },
     {
       "id": "07-initial-reading-intermediate",
@@ -509,12 +379,7 @@
         "Schätzverfahren und deren Konsequenzen",
         "Bedeutung für die saubere Abgrenzung der Abrechnung",
         "Stichworte: Fernauslesung; Manuelle Zählerstandserfassung; Plausibilitätsprüfung; § 40 Abs. 3 EnWG"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "07-initial-reading-advanced",
@@ -527,12 +392,7 @@
         "Schätzverfahren und deren Konsequenzen",
         "Bedeutung für die saubere Abgrenzung der Abrechnung",
         "Stichworte: Fernauslesung; Manuelle Zählerstandserfassung; Plausibilitätsprüfung; § 40 Abs. 3 EnWG"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "07-initial-reading-expert",
@@ -545,13 +405,9 @@
         "Schätzverfahren und deren Konsequenzen",
         "Bedeutung für die saubere Abgrenzung der Abrechnung",
         "Stichworte: Fernauslesung; Manuelle Zählerstandserfassung; Plausibilitätsprüfung; § 40 Abs. 3 EnWG"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "08-cancellation-beginner",
       "title": "Stornoprozesse und Fehlerbehandlung",
@@ -563,11 +419,7 @@
         "Praxisbeispiele für typische Fehlerfälle und Lösungsansätze",
         "Stichworte: Stornofristen; Fehlercodes; Ersatzzustellung; Kulanzregelungen"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 3
-      }
+      "validationCriteria": { "requiredSections": 3 }
     },
     {
       "id": "08-cancellation-intermediate",
@@ -579,12 +431,7 @@
         "Anpassung von Stammdaten und deren Folgen",
         "Praxisbeispiele für typische Fehlerfälle und Lösungsansätze",
         "Stichworte: Stornofristen; Fehlercodes; Ersatzzustellung; Kulanzregelungen"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "08-cancellation-advanced",
@@ -596,12 +443,7 @@
         "Anpassung von Stammdaten und deren Folgen",
         "Praxisbeispiele für typische Fehlerfälle und Lösungsansätze",
         "Stichworte: Stornofristen; Fehlercodes; Ersatzzustellung; Kulanzregelungen"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "08-cancellation-expert",
@@ -613,13 +455,9 @@
         "Anpassung von Stammdaten und deren Folgen",
         "Praxisbeispiele für typische Fehlerfälle und Lösungsansätze",
         "Stichworte: Stornofristen; Fehlercodes; Ersatzzustellung; Kulanzregelungen"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "09-master-data-changes-beginner",
       "title": "Stammdatenänderungen während des Prozesses",
@@ -630,11 +468,7 @@
         "Prozess bei Umzügen und Änderungen der Verbrauchsstelle",
         "Stichworte: Änderungsmitteilungen; Datenqualität; Datenkonsistenz"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 3
-      }
+      "validationCriteria": { "requiredSections": 3 }
     },
     {
       "id": "09-master-data-changes-intermediate",
@@ -645,12 +479,7 @@
         "Die Rolle der Stammdatensynchronisation (z.B. durch Clearingstellen)",
         "Prozess bei Umzügen und Änderungen der Verbrauchsstelle",
         "Stichworte: Änderungsmitteilungen; Datenqualität; Datenkonsistenz"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "09-master-data-changes-advanced",
@@ -661,12 +490,7 @@
         "Die Rolle der Stammdatensynchronisation (z.B. durch Clearingstellen)",
         "Prozess bei Umzügen und Änderungen der Verbrauchsstelle",
         "Stichworte: Änderungsmitteilungen; Datenqualität; Datenkonsistenz"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "09-master-data-changes-expert",
@@ -677,13 +501,9 @@
         "Die Rolle der Stammdatensynchronisation (z.B. durch Clearingstellen)",
         "Prozess bei Umzügen und Änderungen der Verbrauchsstelle",
         "Stichworte: Änderungsmitteilungen; Datenqualität; Datenkonsistenz"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "10-price-sheets-beginner",
       "title": "Übermittlung von Preisblättern",
@@ -694,11 +514,7 @@
         "Transparenz der Netznutzungspreise",
         "Stichworte: Netznutzungsentgelte; Preisblattstruktur; Regulierungsbehörden"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 3
-      }
+      "validationCriteria": { "requiredSections": 3 }
     },
     {
       "id": "10-price-sheets-intermediate",
@@ -709,12 +525,7 @@
         "Fristen und Formate (ORDERS/ORDRSP)",
         "Transparenz der Netznutzungspreise",
         "Stichworte: Netznutzungsentgelte; Preisblattstruktur; Regulierungsbehörden"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "10-price-sheets-advanced",
@@ -725,12 +536,7 @@
         "Fristen und Formate (ORDERS/ORDRSP)",
         "Transparenz der Netznutzungspreise",
         "Stichworte: Netznutzungsentgelte; Preisblattstruktur; Regulierungsbehörden"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "10-price-sheets-expert",
@@ -741,13 +547,9 @@
         "Fristen und Formate (ORDERS/ORDRSP)",
         "Transparenz der Netznutzungspreise",
         "Stichworte: Netznutzungsentgelte; Preisblattstruktur; Regulierungsbehörden"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "11-checklist-beginner",
       "title": "Prozess-Checkliste und Verantwortlichkeiten im Überblick",
@@ -758,11 +560,7 @@
         "Checkliste für Lieferanten, Netzbetreiber und Messstellenbetreiber",
         "Stichworte: Prozessoptimierung; Effizienzsteigerung"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 3
-      }
+      "validationCriteria": { "requiredSections": 3 }
     },
     {
       "id": "11-checklist-intermediate",
@@ -773,12 +571,7 @@
         "Zusammenfassende Tabelle der Zuständigkeiten (Wer macht was?)",
         "Checkliste für Lieferanten, Netzbetreiber und Messstellenbetreiber",
         "Stichworte: Prozessoptimierung; Effizienzsteigerung"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "11-checklist-advanced",
@@ -789,12 +582,7 @@
         "Zusammenfassende Tabelle der Zuständigkeiten (Wer macht was?)",
         "Checkliste für Lieferanten, Netzbetreiber und Messstellenbetreiber",
         "Stichworte: Prozessoptimierung; Effizienzsteigerung"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "11-checklist-expert",
@@ -805,13 +593,9 @@
         "Zusammenfassende Tabelle der Zuständigkeiten (Wer macht was?)",
         "Checkliste für Lieferanten, Netzbetreiber und Messstellenbetreiber",
         "Stichworte: Prozessoptimierung; Effizienzsteigerung"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
+
     {
       "id": "12-future-beginner",
       "title": "Aktuelle Entwicklungen und die Zukunft der GPKE",
@@ -822,11 +606,7 @@
         "Die Rolle der Künstlichen Intelligenz (KI) in der Marktkommunikation",
         "Stichworte: Smart Meter; Künstliche Intelligenz; Automatisierung; Blockchain"
       ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 3
-      }
+      "validationCriteria": { "requiredSections": 3 }
     },
     {
       "id": "12-future-intermediate",
@@ -837,12 +617,7 @@
         "Auswirkungen neuer gesetzlicher Anforderungen (z.B. Smart Meter Rollout)",
         "Die Rolle der Künstlichen Intelligenz (KI) in der Marktkommunikation",
         "Stichworte: Smart Meter; Künstliche Intelligenz; Automatisierung; Blockchain"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "12-future-advanced",
@@ -853,12 +628,7 @@
         "Auswirkungen neuer gesetzlicher Anforderungen (z.B. Smart Meter Rollout)",
         "Die Rolle der Künstlichen Intelligenz (KI) in der Marktkommunikation",
         "Stichworte: Smart Meter; Künstliche Intelligenz; Automatisierung; Blockchain"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     },
     {
       "id": "12-future-expert",
@@ -869,12 +639,7 @@
         "Auswirkungen neuer gesetzlicher Anforderungen (z.B. Smart Meter Rollout)",
         "Die Rolle der Künstlichen Intelligenz (KI) in der Marktkommunikation",
         "Stichworte: Smart Meter; Künstliche Intelligenz; Automatisierung; Blockchain"
-      ],
-      "searchQueries": [],
-      "dependencies": [],
-      "validationCriteria": {
-        "requiredSections": 1
-      }
+      ]
     }
   ]
 }

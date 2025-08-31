@@ -1,0 +1,26 @@
+{
+  "chapterId": "07-quality",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [
+    {
+      "type": "SEARCH_RESULTS_SELECTION",
+      "context": {
+        "term": "ALOCAT Zuordnungsregeln",
+        "results": {
+          "points": []
+        }
+      },
+      "decisionId": "decision_1756676221976"
+    },
+    {
+      "type": "SEARCH_RESULTS_SELECTION",
+      "context": {
+        "term": "Plausibilitätsprüfungen Energiewirtschaft",
+        "results": {
+          "points": []
+        }
+      },
+      "decisionId": "decision_1756676221976"
+    }
+  ]
+}

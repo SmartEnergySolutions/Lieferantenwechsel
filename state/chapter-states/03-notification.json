@@ -1,0 +1,26 @@
+{
+  "chapterId": "03-notification",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [
+    {
+      "type": "SEARCH_RESULTS_SELECTION",
+      "context": {
+        "term": "ANMELD Validierung",
+        "results": {
+          "points": []
+        }
+      },
+      "decisionId": "decision_1756676221971"
+    },
+    {
+      "type": "SEARCH_RESULTS_SELECTION",
+      "context": {
+        "term": "EDI Fehlercodes Marktkommunikation",
+        "results": {
+          "points": []
+        }
+      },
+      "decisionId": "decision_1756676221971"
+    }
+  ]
+}

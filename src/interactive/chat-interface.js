@@ -4,6 +4,7 @@ const { QdrantClient } = require('../retrieval/qdrant-client');
 const { embedText } = require('../retrieval/embeddings');
 const { basicFilter, mergeWeighted } = require('../retrieval/search-strategies');
 const { SessionPersistence } = require('./session-persistence');
+const { getActiveChapters } = require('../config/loader');
 
 class ChatInterface {
   constructor(stateManager, sessionManager, { checkpointOnReview = false, sessionPersistence = null } = {}) {
@@ -18,11 +19,14 @@ class ChatInterface {
     process.on('SIGINT', async () => { await this.handleGracefulShutdown(); process.exit(0); });
     logger.info('interactive session start');
     // Simple loop: choose chapter -> enter term -> search -> review -> select -> generate section (optional)
-    const chapterId = await this.ask('Kapitel-ID (z.B. 01-overview): ');
+  const chapterRaw = await this.ask('Kapitel-ID (z.B. 01-overview oder Titel frei): ');
+  const chapterId = await this.resolveChapterId(chapterRaw);
     const term = await this.ask('Suchbegriff: ');
-    const alpha = parseFloat((await this.ask('Alpha (0.5-0.95, Enter=0.7): ')) || '0.7');
-    const limit = parseInt((await this.ask('Max Ergebnisse (Enter=10): ')) || '10', 10);
-    let results = await this.searchEmbedFilter(term, { alpha, limit });
+  const alphaIn = parseFloat((await this.ask('Alpha (0.5-0.95, Enter=0.7): ')) || '0.7');
+  const alpha = Number.isFinite(alphaIn) ? Math.min(0.95, Math.max(0.5, alphaIn)) : 0.7;
+  const limitIn = parseInt((await this.ask('Max Ergebnisse (Enter=10): ')) || '10', 10);
+  const limit = Number.isFinite(limitIn) ? Math.min(200, Math.max(1, limitIn)) : 10;
+  let results = await this.searchEmbedFilter(term, { alpha, limit });
     try {
       const { filterByChunkTypes, dedupeByIdOrSource, sortByRelevance } = require('../retrieval/content-analyzer');
       // Prefer typical instruction-bearing chunks first; this can be adjusted later by user
@@ -73,12 +77,59 @@ class ChatInterface {
 
   async searchEmbedFilter(term, { alpha = 0.7, limit = 10 } = {}) {
     const cfg = require('../config/config');
-    const vec = await embedText(term, cfg.embeddings.size);
     const qc = new QdrantClient();
-    const base = await qc.searchPoints(cfg.qdrant.collection, vec, { limit, with_payload: true });
+    const collection = cfg.qdrant.collection;
+    // Try to discover the vector size from Qdrant; fall back to configured size.
+    let vecSize = cfg.embeddings.size;
+    try {
+      const meta = await qc.getCollection(collection);
+      const declared = meta?.config?.params?.vectors?.size || meta?.vectors?.size;
+      if (Number.isFinite(declared) && declared > 0) vecSize = declared;
+    } catch {}
+
+    let vec = await embedText(term, vecSize);
     const filter = basicFilter(term);
-    const filtered = await qc.searchPoints(cfg.qdrant.collection, vec, { limit, filter, with_payload: true });
-    return mergeWeighted(base, filtered, alpha).slice(0, limit);
+
+    try {
+      const base = await qc.searchPoints(collection, vec, { limit, with_payload: true });
+      const filtered = await qc.searchPoints(collection, vec, { limit, filter, with_payload: true });
+      return mergeWeighted(base, filtered, alpha).slice(0, limit);
+    } catch (e) {
+      // Retry on potential vector-size mismatch by re-reading collection size.
+      const status = e?.response?.status;
+      const msg = e?.response?.data?.status?.error || e?.message;
+      if (status === 400) {
+        try {
+          const meta = await qc.getCollection(collection);
+          const declared = meta?.config?.params?.vectors?.size || meta?.vectors?.size;
+          if (Number.isFinite(declared) && declared > 0 && declared !== vecSize) {
+            vecSize = declared;
+            vec = await embedText(term, vecSize);
+            const base = await qc.searchPoints(collection, vec, { limit, with_payload: true });
+            const filtered = await qc.searchPoints(collection, vec, { limit, filter, with_payload: true });
+            return mergeWeighted(base, filtered, alpha).slice(0, limit);
+          }
+        } catch {}
+      }
+      // Surface a clearer error upstream
+      throw new Error(`Qdrant search failed (${status || 'n/a'}): ${msg || 'unknown error'}`);
+    }
+  }
+
+  async resolveChapterId(input) {
+    const raw = String(input || '').trim();
+    if (!raw) return raw;
+    try {
+      const { chapters } = await getActiveChapters();
+      const byId = chapters.find(c => (c.id || '').toLowerCase() === raw.toLowerCase());
+      if (byId) return byId.id;
+      const byTitle = chapters.find(c => (c.title || '').toLowerCase().includes(raw.toLowerCase()));
+      if (byTitle) return byTitle.id;
+      // Fallback: slugify-ish
+      return raw.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    } catch {
+      return raw;
+    }
   }
 
   ask(prompt) {

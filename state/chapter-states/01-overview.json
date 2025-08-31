@@ -11,6 +11,26 @@
       "presentedAt": "2025-08-30T22:31:56.488Z",
       "timeoutAt": "2025-08-30T22:36:56.488Z",
       "decisionId": "decision_1756593116490"
+    },
+    {
+      "type": "SEARCH_RESULTS_SELECTION",
+      "context": {
+        "term": "Lieferantenwechsel Prozess Überblick",
+        "results": {
+          "points": []
+        }
+      },
+      "decisionId": "decision_1756676221962"
+    },
+    {
+      "type": "SEARCH_RESULTS_SELECTION",
+      "context": {
+        "term": "ANMELD Nachricht Grundlagen",
+        "results": {
+          "points": []
+        }
+      },
+      "decisionId": "decision_1756676221968"
     }
   ],
   "completedDecisions": [

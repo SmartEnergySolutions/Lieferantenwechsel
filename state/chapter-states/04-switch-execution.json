@@ -1,0 +1,26 @@
+{
+  "chapterId": "04-switch-execution",
+  "status": "IN_PROGRESS",
+  "pendingDecisions": [
+    {
+      "type": "SEARCH_RESULTS_SELECTION",
+      "context": {
+        "term": "Lieferbeginn Terminierung",
+        "results": {
+          "points": []
+        }
+      },
+      "decisionId": "decision_1756676221972"
+    },
+    {
+      "type": "SEARCH_RESULTS_SELECTION",
+      "context": {
+        "term": "Messlokation Wechselprozess",
+        "results": {
+          "points": []
+        }
+      },
+      "decisionId": "decision_1756676221972"
+    }
+  ]
+}
